@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <div><img src="./assets/Farouky_School.png" alt="Farouky_School" /></div>
+      <section>
+        <form action="" id="register">
+          <div>
+            <label for="firstname">Prénom :</label>
+            <input type="text" name="firstname" id="firstname" />
+          </div>
+          <div>
+            <label for="lastname">Nom :</label>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+          <div>
+            <label for="birthDate">Date de naissance :</label>
+            <input type="date" name="birthDate" id="birthDate" />
+          </div>
+          <div>
+            <label for="ocupation">Fonction :</label>
+            <input type="text" name="ocupation" id="ocupation" />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <span
+              >Le mot de passe doit avoir une longueur d'au moins 8 caractères
+              et contenir au moins une lettre majuscule, une lettre minuscule,
+              un chiffre et un caractère spécial.</span
+            >
+          </div>
+          <div><input type="submit" value="S'inscrire" id="button" /></div>
+        </form>
+        <div><a href="login.html">Login</a></div>
+      </section>
+    </main>
+    <script src="./script/register.js" type="module"></script>
+  </body>
+</html>

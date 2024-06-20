@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+img {
+  width: 150px;
+}
+
+form > div,
+#register > div:nth-child(6) > div:nth-child(1) {
+  display: flex;
+  margin: 0 0 50px 0;
+  width: 100%;
+}
+
+#register > div:nth-child(6) > div:nth-child(1) {
+  flex-wrap: nowrap;
+}
+
+form > div {
+  flex-wrap: wrap;
+}
+
+main > div {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px;
+  justify-content: end;
+  margin: 0 0 0 10px;
+}
+
+label {
+  font-size: 1.1rem;
+  text-wrap: nowrap;
+  font-weight: 700;
+}
+
+textarea {
+  padding: 5px;
+  color: #565656;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px 0px #000;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  background: #cc1db9;
+}
+
+input:disabled {
+  filter: grayscale();
+}
+
+section#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc1db99c;
+  border-radius: 15px;
+  height: 100%;
+  margin: 0 0 35px 0;
+  padding: 10px;
+  width: 85%;
+}
+
+p {
+  font-size: 1.2rem;
+  text-wrap: wrap;
+}
+
+form.app {
+  width: 100%;
+}
+
+#register > div,
+#login > div {
+  margin: 0px 0 15px 0;
+  width: 320px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#register > div:nth-child(6) > div:nth-child(1) {
+  margin: 0px 0 15px 0;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form + div + div,
+form + div {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  text-align: end;
+}
+
+#register > div > span,
+#errors {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+@media all and (max-width: 425px) {
+  form > div > div {
+    justify-content: space-evenly;
+    width: 320px;
+    margin: 0 0 25px 10px;
+  }
+  form > div {
+    justify-content: center;
+    align-items: center;
+  }
+}

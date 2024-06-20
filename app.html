@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenAi</title>
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <header><a href="#" id="logout">Déconnexion</a></header>
+      <div><img src="./assets/Farouky_School.png" alt="Farouky_School" /></div>
+      <section>
+        <form action="" class="app">
+          <div>
+            <div>
+              <label for="identite">Identité :</label>
+              <textarea
+                name="identite"
+                id="identite"
+                cols="30"
+                rows="10"
+                placeholder="Agis comme un directeur marketing"
+              ></textarea>
+            </div>
+            <div>
+              <label for="action">Action :</label>
+              <textarea
+                name="action"
+                id="action"
+                cols="30"
+                rows="10"
+                placeholder="Identifier 3 personas qui ont le plus de chance d'acheter notre produit"
+              ></textarea>
+            </div>
+            <div>
+              <label for="context">Contexte :</label>
+              <textarea
+                name="context"
+                id="context"
+                cols="30"
+                rows="10"
+                placeholder="Le produit est une formation en ligne intitulé maitriser chatgpt pour aider les entrepreneurs à crée les meilleurs prompts chatgpt"
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="tonalite">Tonalite :</label>
+              <textarea
+                name="tonalite"
+                id="tonalite"
+                cols="30"
+                rows="10"
+                placeholder="Utilise un style proffesionel"
+              ></textarea>
+            </div>
+            <div>
+              <label for="format">Format :</label>
+              <textarea
+                name="format"
+                id="format"
+                cols="30"
+                rows="10"
+                placeholder="Pour chaque personas indique les élément suivants : age, intéret, indicateurs démographique, valeurs, besoins, scénario d'utilisation, citation typique"
+              ></textarea>
+            </div>
+            <div>
+              <label for="etapes">Etapes :</label>
+              <textarea
+                name="etapes"
+                id="etapes"
+                cols="30"
+                rows="10"
+                placeholder="Etape 1: utilise des phrases simples et concises. Etape 2: illustre les résultat dans un tableau"
+              ></textarea>
+            </div>
+          </div>
+          <div><input type="submit" value="Envoyer" id="button" /></div>
+        </form>
+      </section>
+      <section id="result"></section>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
