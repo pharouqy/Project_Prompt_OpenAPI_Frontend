@@ -77,7 +77,6 @@ function submit() {
       const fetchData = await fetch(`${API_URL}/api`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
           Authorization: "Bearer " + token,
         },
         body: JSON.stringify(sendData),
