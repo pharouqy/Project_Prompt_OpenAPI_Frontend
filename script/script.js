@@ -74,8 +74,7 @@ function submit() {
       prompt: finalData,
     };
     try {
-      const fetchData = await fetch(`${API_URL}/api/open`, {
-        mode: "no-cors",
+      const fetchData = await fetch(`${API_URL}/api`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -87,6 +86,11 @@ function submit() {
         // Gérer ici l'erreur de limite de taux (status 429)
         result.innerHTML =
           "Limite de taux atteinte. Veuillez réessayer dans 30 minutes.";
+        return;
+      }
+      if (fetchData.status === 500) {
+        result.innerHTML =
+          "Il y'a une erreur avec le server veuillez nous excusez !";
         return;
       }
       if (fetchData.ok) {
